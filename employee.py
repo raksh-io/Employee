@@ -1,16 +1,13 @@
 import sys
 
-def get_employee_details(
-        name,
-        emp_id,
-        department,
-        salary):
-    """Return a formatted employee details string with defaults."""
+def get_employee_details(name, emp_id, department, salary):
+    """Return a formatted employee details string exactly matching the test."""
     return (
-        f"Employee Name: {name}\n"
-        f"Employee ID: {emp_id}\n"
-        f"Department: {department}\n"
-        f"Salary: {salary}"
+        f"Employee Name: {name},"
+        f"Employee ID: {emp_id},"
+        f"Department : {department},"
+        f"Salary : {salary}"
     )
 
-print(get_employee_details("Rakshat", 12, "MCA", 100000))
+if __name__ == "__main__":
+    print(get_employee_details("Alice Smith", "E1234", "HR", "60000.00"))
